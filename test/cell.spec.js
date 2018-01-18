@@ -8,14 +8,16 @@ describe('a cell', () => {
   });
 
   it('is initialized with an empty string for current symbol', () => {
-
+    expect(testCell.symbol).to.eq('');
   });
 
   it('has a method to change the symbol from empty string to character', () => {
-
+    testCell.recordSymbol('X');
+    expect(testCell.symbol).to.eq('X');
   });
 
   it('cannot be overriden with a new symbol choice', () => {
-
+    testCell.recordSymbol('O');
+    expect(testCell.symbol).to.eq('X');
   });
 });

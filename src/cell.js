@@ -7,7 +7,7 @@ const Cell = class Cell {
     if (this.symbol === '') {
       this.symbol = symbol;
     } else {
-      alert('that space is already taken!');
+      console.log('that space is already taken!');
     }
   }
 };
