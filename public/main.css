@@ -1,0 +1,14 @@
+.body, .div {
+  margin: 0;
+}
+
+.cell {
+  width: 33%;
+  height: 33vh;
+  border: 1px solid black;
+  float: left;
+}
+
+.board {
+  height: 100%;
+}

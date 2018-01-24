@@ -1,8 +1,9 @@
-const Cell = require('./cell.js');
+import Cell from './cell.js';
 
 const Board = class Board {
   constructor() {
     this.grid = [];
+    this.buildBoard = this.buildBoard.bind(this);
   }
 
   buildBoard() {
